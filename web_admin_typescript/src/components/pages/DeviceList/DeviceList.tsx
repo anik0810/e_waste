@@ -27,7 +27,7 @@ const DeviceList = () => {
         if (feeds.length > 0) {
             return prevDeviceList.map((device, index) => {
                 if (index === 0) {
-                    return { ...device, e_waste: feeds[0].field2 };
+                    return { ...device, e_waste: feeds[feeds.length-1].field2 };
                 }
                 return device;
             });
